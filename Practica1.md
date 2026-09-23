@@ -6,7 +6,7 @@ E
 
 **¿Qué decisiones se pueden tomar con ellos?**
 
-E
+Es
 
 **¿Qué diferencia hay entre una alerta inmediata y un informe histórico?**
 
