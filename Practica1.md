@@ -6,7 +6,7 @@ Los datos los usará el sistema para generar alertas y planificar medidas de mov
 
 **¿Qué decisiones se pueden tomar con ellos?**
 
-Es
+Tras analiazar esos datos hay que identificar los posibles problemas y encontrar una solución para corregirlos.
 
 **¿Qué diferencia hay entre una alerta inmediata y un informe histórico?**
 
@@ -39,3 +39,13 @@ Hay que prestarle especial atención al distrito D4 Sur residencial debido a que
 E
 
 ## Recomendación
+
+Al Ilmo Alcalde de Cáceres
+
+Mi nombres es David García y soy estudiante del Ágora.
+
+Me comunico con usted porque, tras observar el dossier de resultados de los análisis de sensores de calidad, he notado ciertos problemas con riesgos importantes.
+
+Hay sensores que devuelven los mismos datos continuamente lo que podría sugerir que el sensor está averiado o congelado, hay otros que devuelven valores extremos que no tienen sentido y que podrían llevar a conclusiones falsas y hay otros que están un lapso de tiempo sin devolver información lo que podría impedir detectar un problema real.
+
+Para solucionar estos problemas convendría revisar los sensores que estén fallando y arreglarlos o reiniciarlos y si no tiene solución hay que sustituirlos (depende del problema habrá que tomar una decisión u otra), en cuanto a los datos sospechosos lo más conveniente es marcarlos como inválidos en vez de eliminarlos (todo dependerá del caso).
