@@ -36,7 +36,7 @@ Hay que prestarle especial atención al distrito D4 Sur residencial debido a que
 
 **Elige una anomalía y explica si la corregirías, la marcarías como dudosa o la excluirías.**
 
-E
+El PM10 tiene valores siempre positivos pero los resultados del análisis arrojaron valores de PM10 negativos y eso es imposible así que hay que corregir (o sustituir en el peor de los casos) los sensores que devolvieron estos resultados porque pueden llevar a conclusiones falsas
 
 ## Recomendación
 
@@ -49,3 +49,5 @@ Me comunico con usted porque, tras observar el dossier de resultados de los aná
 Hay sensores que devuelven los mismos datos continuamente lo que podría sugerir que el sensor está averiado o congelado, hay otros que devuelven valores extremos que no tienen sentido y que podrían llevar a conclusiones falsas y hay otros que están un lapso de tiempo sin devolver información lo que podría impedir detectar un problema real.
 
 Para solucionar estos problemas convendría revisar los sensores que estén fallando y arreglarlos o reiniciarlos y si no tiene solución hay que sustituirlos (depende del problema habrá que tomar una decisión u otra), en cuanto a los datos sospechosos lo más conveniente es marcarlos como inválidos en vez de eliminarlos (todo dependerá del caso).
+
+Una medida de privacidad que se podría llevar a cabo sería limitar la finalidad, es decir, que los datos que se recogen del análisis se usen para el propósito inicial, esos datos no los puede usar cualquiera así que habría que controlar quién accede a ellos.
