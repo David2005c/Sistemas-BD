@@ -71,9 +71,22 @@ erDiagram
 
 1.Al menos tres índices, incluyendo uno compuesto.
 
+![alt text](image-1.png)
+
+![alt text](image-3.png)
+
+![alt text](image-2.png)
+
+
 2.Si el escenario lo necesita, un índice de texto o geoespacial.
 
+![alt text](image-4.png)
+
+Para este escenario no necesitamos un índice geoespacial porque no trabajamos con coordenadas
+
 3.Para cada índice, explica qué consulta acelera, el orden de sus campos y su coste en escrituras y almacenamiento.
+
+El primer índice sirve para cuando un usuario busque una película le muestren las películas ordenadas de manera descendente por el id, el segundo es para mostrar las peliculas que tienen el género que se ha buscado y el último es para que se registren cuantas valoraciones hace cada usuario
 
 4.Evidencia el plan de una consulta con explain("executionStats") antes y después, o explica por qué no es posible comparar ambos casos.
 
