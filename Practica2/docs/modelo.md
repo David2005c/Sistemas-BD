@@ -78,31 +78,51 @@ erDiagram
 ![alt text](image-2.png)
 
 
-2.Si el escenario lo necesita, un índice de texto o geoespacial.
+**2.Si el escenario lo necesita, un índice de texto o geoespacial.**
 
 ![alt text](image-4.png)
 
 Para este escenario no necesitamos un índice geoespacial porque no trabajamos con coordenadas
 
-3.Para cada índice, explica qué consulta acelera, el orden de sus campos y su coste en escrituras y almacenamiento.
+**3.Para cada índice, explica qué consulta acelera, el orden de sus campos y su coste en escrituras y almacenamiento.**
 
 El primer índice sirve para cuando un usuario busque una película le muestren las películas ordenadas de manera descendente por el id, el segundo es para mostrar las peliculas que tienen el género que se ha buscado y el último es para que se registren cuantas valoraciones hace cada usuario
 
-4.Evidencia el plan de una consulta con explain("executionStats") antes y después, o explica por qué no es posible comparar ambos casos.
+**4.Evidencia el plan de una consulta con explain("executionStats") antes y después, o explica por qué no es posible comparar ambos casos.**
+
+| Métrica      | Antes  | Después |
+|--------------|:------:|:-------:|
+| nReturned    |   1    |    1    |
+| executionTimeMillis| O ms | 1 ms |
+| totalKeysExamined | 0 | 1 |
+| totalDocsExamined | 1 | 1 |
+|  Plan | Collscan | Ixscan |
 
 ## 4. Resolver consultas y una agregación compleja (90 minutos)
 
-**Implementa consultas que cubran las preguntas de negocio. Debes incluir:**
+### Implementa consultas que cubran las preguntas de negocio. Debes incluir:
 
-1.Inserción, actualización parcial y eliminación o desactivación lógica.
+**1.Inserción, actualización parcial y eliminación o desactivación lógica.**
 
-2.Filtros combinados, ordenación y paginación estable con limit y un criterio de ordenación.
+## Inserción
 
-3.Una consulta que use una referencia mediante $lookup, si el diseño contiene referencias.
+![alt text](image-6.png)
 
-4.Una agregación compleja de al menos cuatro etapas, que incluya dos de estas operaciones: $group, $lookup, $unwind, $facet, $bucket, $setWindowFields o una operación geoespacial.
+![alt text](image-5.png)
 
-5.Una explicación del resultado y de cómo cambiaría el coste al aumentar los datos.
+## Actualización parcial
+
+
+
+## Desactivación lógica
+
+**2.Filtros combinados, ordenación y paginación estable con limit y un criterio de ordenación.**
+
+**3.Una consulta que use una referencia mediante $lookup, si el diseño contiene referencias.**
+
+**4.Una agregación compleja de al menos cuatro etapas, que incluya dos de estas operaciones: $group, $lookup, $unwind, $facet, $bucket, $setWindowFields o una operación geoespacial.**
+
+**5.Una explicación del resultado y de cómo cambiaría el coste al aumentar los datos.**
 
 ## 5. Copias de seguridad, seguridad y límites (60 minutos)
 
