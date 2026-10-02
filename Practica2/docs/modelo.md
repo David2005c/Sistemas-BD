@@ -112,9 +112,16 @@ El primer índice sirve para cuando un usuario busque una película le muestren 
 
 ## Actualización parcial
 
+![alt text](image-7.png)
 
+![alt text](image-8.png)
 
 ## Desactivación lógica
+
+![alt text](image-9.png)
+
+![alt text](image-10.png)
+
 
 **2.Filtros combinados, ordenación y paginación estable con limit y un criterio de ordenación.**
 
