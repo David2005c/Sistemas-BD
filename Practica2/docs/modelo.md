@@ -125,9 +125,18 @@ El primer índice sirve para cuando un usuario busque una película le muestren 
 
 **2.Filtros combinados, ordenación y paginación estable con limit y un criterio de ordenación.**
 
+![alt text](image-11.png)
+
 **3.Una consulta que use una referencia mediante $lookup, si el diseño contiene referencias.**
 
+![alt text](image-12.png)
+
+Para que la consulta funcione tiene que haber datos en las colecciones que vas a usar porque sino no funciona
+
 **4.Una agregación compleja de al menos cuatro etapas, que incluya dos de estas operaciones: $group, $lookup, $unwind, $facet, $bucket, $setWindowFields o una operación geoespacial.**
+
+![alt text](image-13.png)
+
 
 **5.Una explicación del resultado y de cómo cambiaría el coste al aumentar los datos.**
 
