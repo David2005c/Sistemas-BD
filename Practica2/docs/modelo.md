@@ -146,9 +146,22 @@ Para que la consulta funcione tiene que haber datos en las colecciones que vas a
 
 1.Un procedimiento de copia y restauración con mongodump/mongorestore o la alternativa equivalente de Atlas.
 
+## Copia de la DB peliculas
+
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+
+## Restauración de la DB peliculas
+
+![alt text](image-16.png)
+
 2.Usuarios, roles y permisos mínimos para la aplicación y para administración.
 
+**Usuario y admin**
+
 3.Qué datos deben cifrarse, anonimizarse o excluirse de los entornos de prueba.
+
 
 4.Dos situaciones en las que MongoDB no sería la mejor opción o exigiría complementarse con otro sistema.
 
