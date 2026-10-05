@@ -140,6 +140,10 @@ Para que la consulta funcione tiene que haber datos en las colecciones que vas a
 
 **5.Una explicación del resultado y de cómo cambiaría el coste al aumentar los datos.**
 
+* Eficiencia de la agregación: En lugar de realizar consultas separadas para obtener la puntuación media y el número de valoraciones de cada película, el clúster realiza ambas operaciones mediante una única agregación, utilizando $group para calcular la media de las puntuaciones y contar las valoraciones.
+
+* Filtrado y reducción de datos: La utilización de $lookup y $unwind permite relacionar las valoraciones con sus películas y trabajar únicamente con los documentos necesarios antes de realizar el $group, reduciendo la cantidad de datos que deben procesarse en las etapas posteriores.
+
 ## 5. Copias de seguridad, seguridad y límites (60 minutos)
 
 **Documenta**:
