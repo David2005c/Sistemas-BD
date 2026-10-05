@@ -158,11 +158,18 @@ Para que la consulta funcione tiene que haber datos en las colecciones que vas a
 
 2.Usuarios, roles y permisos mínimos para la aplicación y para administración.
 
-**Usuario y admin**
+**Usuario y administrador**
 
 3.Qué datos deben cifrarse, anonimizarse o excluirse de los entornos de prueba.
 
+**La contraseña y el id del usuario no son necesarios**
 
 4.Dos situaciones en las que MongoDB no sería la mejor opción o exigiría complementarse con otro sistema.
 
+**Sistemas bancarios o financieros: requieren una alta consistencia y transacciones complejas, por lo que una base de datos relacional puede ser más adecuada.**
+
+**Análisis masivo de datos: cuando se necesitan analizar grandes volúmenes de datos históricos, MongoDB puede complementarse con sistemas como Spark o un data warehouse.**
+
 5.Qué datos históricos conservarías, archivarías o eliminarías y con qué criterio.
+
+**El correo lo eliminaría porque si quiero mostrar las valoraciones de los usuarios de una película solo habría que mostrar el nombre del usuario, el correo no es necesario (además es un dato sensible)**
