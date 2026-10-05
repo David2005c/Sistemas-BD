@@ -65,22 +65,22 @@ erDiagram
 
 **Incluye scripts reproducibles para crear las colecciones con validación mediante $jsonSchema. La validación debe comprobar, como mínimo, tipos, campos obligatorios, enumeraciones y una restricción de rango o formato.**
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 **Define índices justificados a partir de las preguntas de negocio:**
 
 1.Al menos tres índices, incluyendo uno compuesto.
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 
 **2.Si el escenario lo necesita, un índice de texto o geoespacial.**
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 Para este escenario no necesitamos un índice geoespacial porque no trabajamos con coordenadas
 
@@ -106,36 +106,36 @@ El primer índice sirve para cuando un usuario busque una película le muestren 
 
 ## Inserción
 
-![alt text](image-6.png)
+![alt text](img/image-6.png)
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 ## Actualización parcial
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 ## Desactivación lógica
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
 
 **2.Filtros combinados, ordenación y paginación estable con limit y un criterio de ordenación.**
 
-![alt text](image-11.png)
+![alt text](img/image-11.png)
 
 **3.Una consulta que use una referencia mediante $lookup, si el diseño contiene referencias.**
 
-![alt text](image-12.png)
+![alt text](img/image-12.png)
 
 Para que la consulta funcione tiene que haber datos en las colecciones que vas a usar porque sino no funciona
 
 **4.Una agregación compleja de al menos cuatro etapas, que incluya dos de estas operaciones: $group, $lookup, $unwind, $facet, $bucket, $setWindowFields o una operación geoespacial.**
 
-![alt text](image-13.png)
+![alt text](img/image-13.png)
 
 
 **5.Una explicación del resultado y de cómo cambiaría el coste al aumentar los datos.**
@@ -152,13 +152,13 @@ Para que la consulta funcione tiene que haber datos en las colecciones que vas a
 
 ## Copia de la DB peliculas
 
-![alt text](image-14.png)
+![alt text](img/image-14.png)
 
-![alt text](image-15.png)
+![alt text](img/image-15.png)
 
 ## Restauración de la DB peliculas
 
-![alt text](image-16.png)
+![alt text](img/image-16.png)
 
 2.Usuarios, roles y permisos mínimos para la aplicación y para administración.
 
