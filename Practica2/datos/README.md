@@ -42,8 +42,7 @@ Nombre de la película o género de la misma
 -Seguridad: MongoDB permite autenticación, autorización mediante roles, cifrado de datos y conexiones seguras.
 
 -Disponibilidad: MongoDB ofrece réplicas (replica sets) para mantener los datos disponibles si falla un servidor. Para sistemas que necesitan disponibilidad prácticamente continua, habría que configurar correctamente la replicación, copias de seguridad y recuperación ante desastres.
-
-
+commitrequisitos3
 -Crecimiento: Hay que tener cuidado con el máximo de 16MB por documento en MongoDB que no ha que superar.
 
 
