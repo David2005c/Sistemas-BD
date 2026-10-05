@@ -37,6 +37,7 @@ Nombre de la película o género de la misma
 
 **5.Los requisitos de seguridad, privacidad, disponibilidad y crecimiento.**
 
+Privacidad: Nombres, correos y contraseñas se consideran datos sensiblesssss
 
 
 
