@@ -6,7 +6,7 @@ Antes de crear nodos o escribir sentencias Cypher, documenta:
 
 **1- El escenario elegido, su contexto y los actores o usuarios que interactúan con el grafo (por ejemplo: el oyente que reproduce música, el cantante o artista que sube canciones y álbumes, el analista que examina tendencias y el motor de recomendación que genera sugerencias automáticas).**
 
-He elegido el modelo de rutas deportivas y de senderismo y los usuarios que interactúan con el grafo serían los senderistas
+He elegido el modelo de rutas deportivas y de senderismo y los usuarios que interactúan con el grafo serían los senderistas, corredores, guías de montaña y el administrador.
 
 
 **2- Al menos seis preguntas de negocio concretas que la base de datos de grafos deba resolver (por ejemplo: colaboraciones entre cantantes, recomendaciones por amigos o caminos más cortos).**
