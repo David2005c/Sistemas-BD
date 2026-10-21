@@ -18,4 +18,4 @@ Entrega un diagrama visual claro del modelo (utilizando Mermaid) y define la est
 
 **5- Los límites y riesgos del modelo: cómo evitar los supernodos (nodos con miles de relaciones directas que ralentizan las búsquedas) y qué operaciones no son recomendables en un grafo.**
 
-![alt diagrama](evidencias/diagarama_rutas.png)
+![alt diagrama](evidencias/diagrama_rutas.png)

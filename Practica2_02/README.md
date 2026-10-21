@@ -11,6 +11,17 @@ He elegido el modelo de rutas deportivas y de senderismo y los usuarios que inte
 
 **2- Al menos seis preguntas de negocio concretas que la base de datos de grafos deba resolver (por ejemplo: colaboraciones entre cantantes, recomendaciones por amigos o caminos más cortos).**
 
+1.¿Cuáles son las rutas más populares?
+
+2.¿Cuáles son las rutas mejor valoradas?
+
+3.¿Qué usuarios crean más rutas?
+
+4.¿Qué actividad deportiva tiene más rutas?
+
+5.¿Qué lugares concentran más rutas?
+
+6.¿Qué rutas se guardan más veces, pero se realizan menos?
 
 **3- Los datos y recorridos que se consultarán con mayor frecuencia en tiempo real (lecturas masivas) frente a los que se registran puntualmente (escrituras).**
 
