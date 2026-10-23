@@ -34,8 +34,19 @@ Entrega un diagrama visual claro del modelo (utilizando Mermaid) y define la est
 
 [:CREA]
 
-![alt crea](evidencias/ruta_creada.png)
+![alt crea](evidencias/ruta_crear.png)
 
+[:GUARDA]
+
+![alt guarda](evidencias/ruta_guardar.png)
+
+[:REALIZA]
+
+![alt realiza](evidencias/ruta_realizar.png)
+
+[:VALORA]
+
+![alt valora](evidencias/ruta_valorar.png)
 
 **3- La justificación de por qué cada elemento se modela como nodo o como simple propiedad (por ejemplo: por qué el Género o el Artista deben ser nodos propios y no simples textos dentro de la canción).**
 
