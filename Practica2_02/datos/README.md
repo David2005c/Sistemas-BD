@@ -27,9 +27,23 @@ Escribe las consultas Cypher comentadas para responder a las preguntas planteada
 
 **Operación básica: crear o actualizar un nodo y sus relaciones de forma segura usando MERGE y SET.**
 
+MATCH (u:Senderista {id: 'S-002'}),
+      (r:Ruta {id: 'R-2'})
+MERGE (u)-[rel:CREA]->(r)
+SET rel.fecha = date('2026-04-12')
+RETURN u, rel, r;
+
 **Consulta de 1 salto: buscar vecinos inmediatos (por ejemplo, todas las canciones de un artista con su duración y género).**
 
+MATCH (u:Senderista {nombre: 'Jorge'})-[:CREA]->(r:Ruta)
+RETURN r;
+
 **Consulta de varios saltos (multi-salto): recorrer dos o más relaciones encadenadas con filtros y ordenación (por ejemplo, canciones que escuchan mis amigos pero que yo aún no he reproducido).**
+
+MATCH (u:Montañista {id: 'M-001'})
+      -[rel:REALIZA]->
+      (r:Ruta {id: 'R-1'})
+RETURN u, rel, r;
 
 **Recomendación por afinidad: descubrir elementos conectados a través de patrones comunes (por ejemplo, colaboraciones compartidas entre artistas).**
 
