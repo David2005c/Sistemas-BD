@@ -3,13 +3,23 @@ Prepara los scripts en Cypher para asegurar la calidad y el rendimiento del graf
 
 **Restricciones de unicidad (CREATE CONSTRAINT ... IS UNIQUE) para evitar IDs duplicados en nodos principales.**
 
+Script en evidencias/indices_constraint.cypher
+
 **Índices secundarios (CREATE INDEX) para encontrar al instante el nodo de inicio de una búsqueda sin escanear todo el grafo.**
+
+Script en evidencias/indices_secundarios.cypher
 
 **Carga controlada con MERGE: escribe las sentencias de inserción utilizando MERGE en lugar de CREATE, garantizando que el script sea idempotente (se pueda ejecutar varias veces seguidas sin duplicar nodos ni relaciones).**
 
+Script en evidencias/merge.cypher
+
 **Un dataset de prueba conectado con al menos 15 nodos y 25 relaciones para que los caminos devuelvan resultados interesantes.**
 
+Script en evidencias/dataset_prueba.cypher
+
 **Evidenciar el plan de ejecución de una búsqueda con PROFILE o EXPLAIN, comprobando que utiliza el índice (NodeIndexSeek).**
+
+![alt profile](../docs/images/profile.png)
 
 ## 4.Resolver consultas Cypher y caminos complejos (90 minutos)
 
