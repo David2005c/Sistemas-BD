@@ -47,7 +47,11 @@ RETURN u, rel, r;
 
 **Recomendación por afinidad: descubrir elementos conectados a través de patrones comunes (por ejemplo, colaboraciones compartidas entre artistas).**
 
+![alt text](../docs/images/recomendacion.png)
+
 **Camino más corto: calcular la distancia mínima entre dos nodos lejanos con la función shortestPath (grados de separación musical).**
+
+![alt text](../docs/images/camino_corto.png)
 
 **Explicar de forma sencilla por qué Neo4j resuelve estos caminos en milisegundos gracias a la adyacencia libre de índices (conexiones físicas en memoria) frente al coste de los JOIN en bases de datos relacionales.**
 
