@@ -63,16 +63,24 @@ Documenta los aspectos de arquitectura y administración:
 
 **Copias de seguridad y restauración: procedimiento para hacer un volcado del grafo (neo4j-admin dump o exportación desde Neo4j Aura) y cómo recuperarlo.**
 
+_**Copia de seguridad**_
+
+neo4j-admin database dump neo4j --to-path=/var/backups/neo4j/soundwave_2026-10-26.dump
+
+_**Restauración**_
+
+neo4j-admin database load neo4j --from-path=/var/backups/neo4j/soundwave_2026-10-26.dump --overwrite-destination=true
+
 **Seguridad y permisos: definición de roles mínimos (usuario de consulta para la aplicación móvil frente a administrador).**
 
-**Lectura**
+_**Lectura**_
 
 CREATE USER app_rutas SET PASSWORD 'rutas2026'
 CHANGE NOT REQUIRED;
 
 GRANT ROLE reader TO app_rutas;
 
-**Escritura**
+_**Escritura**_
 
 CREATE USER editor_rutas SET PASSWORD 'editor_rutas2026' CHANGE NOT REQUIRED;
 
