@@ -61,7 +61,7 @@ Entrega un diagrama visual claro del modelo (utilizando Mermaid) y define la est
 
 **4- La estrategia para identificadores únicos y tipos de datos compatibles con Cypher.**
 
-La propia del id es distinta en cada nodo
+Cada nodo tendrá un identificador único
 
 **5- Los límites y riesgos del modelo: cómo evitar los supernodos (nodos con miles de relaciones directas que ralentizan las búsquedas) y qué operaciones no son recomendables en un grafo.**
 
