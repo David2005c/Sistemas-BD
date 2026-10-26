@@ -1,0 +1,14 @@
+CREATE CONSTRAINT u_senderista_id IF NOT EXISTS
+FOR (u:Senderista) REQUIRE u.id IS UNIQUE;   
+
+CREATE CONSTRAINT u_montañista_id IF NOT EXISTS
+FOR (u:Montañista) REQUIRE u.id IS UNIQUE;     
+
+CREATE CONSTRAINT u_guia_id IF NOT EXISTS
+FOR (u:Guia) REQUIRE u.id IS UNIQUE; 
+
+CREATE CONSTRAINT u_corredor_id IF NOT EXISTS
+FOR (u:Corredor) REQUIRE u.id IS UNIQUE; 
+
+CREATE CONSTRAINT u_admin_id IF NOT EXISTS
+FOR (u:Admin) REQUIRE u.id IS UNIQUE;
