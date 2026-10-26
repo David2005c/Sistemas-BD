@@ -16,3 +16,11 @@ He elegido el modelo de rutas deportivas y de senderismo y los usuarios que inte
 
 
 **4- Los requisitos de seguridad, disponibilidad, privacidad de los datos (RGPD) y previsión de crecimiento de la red.**
+
+Seguridad: se establecerán permisos de acceso según el tipo de usuario, se protegerán las credenciales y se limitarán las operaciones de creación, modificación y eliminación de datos.
+
+Disponibilidad: se realizarán copias de seguridad periódicas y se establecerán mecanismos de recuperación ante posibles fallos para garantizar la continuidad del servicio.
+
+Privacidad y RGPD: se almacenarán únicamente los datos personales necesarios, se informará a los usuarios sobre su tratamiento y se aplicarán medidas para proteger información sensible, como la ubicación y el historial de rutas realizadas.
+
+Crecimiento de la red: el modelo permitirá incorporar nuevos usuarios, rutas, actividades y lugares. Además, se utilizarán índices y restricciones para mejorar el rendimiento y mantener la integridad de los datos a medida que aumente el volumen de información.
