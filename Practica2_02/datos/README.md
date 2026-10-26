@@ -65,4 +65,18 @@ Documenta los aspectos de arquitectura y administración:
 
 **Seguridad y permisos: definición de roles mínimos (usuario de consulta para la aplicación móvil frente a administrador).**
 
+**Lectura**
+
+CREATE USER app_rutas SET PASSWORD 'rutas2026'
+CHANGE NOT REQUIRED;
+
+GRANT ROLE reader TO app_rutas;
+
+**Escritura**
+
+CREATE USER editor_rutas SET PASSWORD 'editor_rutas2026' CHANGE NOT REQUIRED;
+
+GRANT ROLE editor TO editor_rutas;
+
+
 **Cuándo NO usar Neo4j: dos casos reales donde un grafo no es la herramienta adecuada y conviene usar bases de datos relacionales, documentales o columnares.**

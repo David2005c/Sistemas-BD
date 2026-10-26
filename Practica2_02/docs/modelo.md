@@ -65,7 +65,6 @@ Cada nodo tendrá un identificador único
 
 **5- Los límites y riesgos del modelo: cómo evitar los supernodos (nodos con miles de relaciones directas que ralentizan las búsquedas) y qué operaciones no son recomendables en un grafo.**
 
-<<<<<<< HEAD
 En el modelo de rutas de senderismo desarrollado en Neo4j, uno de los posibles riesgos es la aparición de supernodos. Esto podría ocurrir en los nodos Actividad, si una categoría como Senderismo está conectada con miles de rutas mediante ES_DE_TIPO.
 
 Para reducir estos riesgos, se evitará crear nodos duplicados para una misma actividad o lugar y se mantendrán únicamente las relaciones necesarias entre usuarios, rutas, actividades y lugares. Asimismo, se utilizarán identificadores estables para evitar duplicidades y la cláusula MERGE para crear nodos y relaciones cuando corresponda.
@@ -73,6 +72,3 @@ Para reducir estos riesgos, se evitará crear nodos duplicados para una misma ac
 Otra limitación aparece al realizar recorridos sin límite de profundidad, ya que podrían explorarse demasiadas relaciones entre usuarios y rutas. Por ello, se utilizarán límites en las consultas cuando sean adecuados y se aplicarán filtros para recuperar únicamente la información necesaria.
 
 ![alt diagrama](evidencias/diagarama_rutas.png)
-=======
-![alt diagrama](images/diagrama_rutas.png)
->>>>>>> 63a7de276c2da8bcaf4c838246c8c104b7b9c19e
