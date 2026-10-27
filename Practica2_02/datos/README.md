@@ -61,6 +61,15 @@ Documenta los aspectos de arquitectura y administración:
 
 **Comparativa técnica: elige tu consulta de recomendación o camino más interesante y explica cómo se resolvería en SQL tradicional (número de JOIN y complejidad) frente a Neo4j.**
 
+|Criterio|Neo4j|PostgreSQL |
+|--------|-----|-----------|
+|Sintaxis|Relacionas dos nodos que tengan la misma relación en común|Relaciona tablas intermedias mediante join|
+|Mecánica|Recorre las relaciones REALIZA desde los usuarios hasta las rutas|Combina registros mediante índices|
+|Complejidad|O(k) con nodos directos y rutas|O(N\log N), depende de los índices, del número de registros y el método para utilizar los join|
+|Rendimiento|7 nodos -> 5-30 ms|7 tablas -> 5-50 ms|
+
+
+
 **Copias de seguridad y restauración: procedimiento para hacer un volcado del grafo (neo4j-admin dump o exportación desde Neo4j Aura) y cómo recuperarlo.**
 
 _**Copia de seguridad**_
@@ -88,3 +97,4 @@ GRANT ROLE editor TO editor_rutas;
 
 
 **Cuándo NO usar Neo4j: dos casos reales donde un grafo no es la herramienta adecuada y conviene usar bases de datos relacionales, documentales o columnares.**
+
