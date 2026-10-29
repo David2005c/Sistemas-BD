@@ -74,11 +74,11 @@ Documenta los aspectos de arquitectura y administración:
 
 _**Copia de seguridad**_
 
-neo4j-admin database dump neo4j --to-path=/var/backups/neo4j/soundwave_2026-10-26.dump
+.\neo4j-admin database dump neo4j --to-path=D:\IA_BD\BD_copia_de_seguridad
 
 _**Restauración**_
 
-neo4j-admin database load neo4j --from-path=/var/backups/neo4j/soundwave_2026-10-26.dump --overwrite-destination=true
+neo4j-admin database load neo4j --from-path=/var/backups/neo4j/bdrutas.dump --overwrite-destination=true
 
 **Seguridad y permisos: definición de roles mínimos (usuario de consulta para la aplicación móvil frente a administrador).**
 
