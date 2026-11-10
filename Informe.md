@@ -56,7 +56,9 @@ Registra al menos 5 eventos clave demostrados fehacientemente con consultas a Dy
 
 1. **Operación de tipo Scan:**
    - ¿Qué consulta de tu investigación fue un `Scan`?
-   - *Consulta PartiQL:* `SELECT ...`
+   - *Consulta PartiQL:* `SELECT ...` 
+     SELECT * FROM "EscapeRoomMinecraft"
+     where jugadorId='P009'
    - ¿Por qué el motor ejecutó un Scan y qué impacto tendría este patrón en una tabla con 500 millones de registros?
    - [Tu explicación técnica]
 
