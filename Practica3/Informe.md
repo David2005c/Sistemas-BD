@@ -21,8 +21,8 @@ Registra al menos 5 eventos clave demostrados fehacientemente con consultas a Dy
 | Hora exacta (ISO) | ID Cuenta | Alias | Acción / Evento | Zona | Objeto y detalles clave |
 |---|---|---|---|---|---|
 | `2026-11-02T22:09:00` | `P011` | AdminSol | `DEPOSITAR_OBJETO` | `CamaraTesoro` | `ESPADA_OMEGA` (custodia inicial) |
-| | | | | | |
-| | | | | | |
+|`2026-11-02T22:17:44` |`P009` | ShadowPixel |`RECIBIR_OBJETO` |`BosqueOscuro` | `ESPADA_OMEGA` (recibio la espada de manos del ladrón) |
+|`2026-11-02T22:17:40`|`P007`| CreeperKing | `TRANSFERIR_OBJETO` |`BosqueOscuro` |`ESPADA_OMEGA` (le dió al objeto a otra persona para que lo ocultara) |
 | | | | | | |
 | | | | | | |
 | | | | | | |
@@ -43,6 +43,9 @@ Registra al menos 5 eventos clave demostrados fehacientemente con consultas a Dy
 
 - **Hecho probado (con evidencia en registros):**
   [Describe un hecho irrefutable comprobado con una consulta a DynamoDB]
+
+  Si ejecutamos esta consulta [SELECT nombre, fechaHora, zona, objeto FROM "EscapeRoomMinecraft"
+  WHERE nombre='ShadowPixel' and fechaHora between '2026-11-02T21:30:17' and '2026-11-02T22:25:59' AND objeto='ESPADA_OMEGA'] veremos que ShadowPixel tenia como evento RECIBIR_OBJETO a las 22:17 y ese objeto era la ESPADA_OMEG y a las 22.20 tiene un evento asociado que es OCULTAR_OBJETO y ese objeto vuelve a ser la ESPADA_OMEGA
 
 - **Inferencia lógica razonable:**
   [Describe una deducción fundada a partir de los datos, pero que no está registrada explícitamente]
@@ -65,5 +68,7 @@ Registra al menos 5 eventos clave demostrados fehacientemente con consultas a Dy
 2. **Operación sobre Global Secondary Index (GSI):**
    - ¿Qué consulta utilizó el índice `PorObjeto`?
    - *Consulta PartiQL:* `SELECT ...`
+      SELECT * FROM "EscapeRoomMinecraft"."PorObjeto"
+      WHERE objeto = 'ESPADA_OMEGA'
    - ¿Qué ventaja técnica aportó la proyección `ALL` frente a consultar la tabla base?
    - [Tu explicación técnica]
