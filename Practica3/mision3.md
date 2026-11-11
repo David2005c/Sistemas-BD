@@ -1,0 +1,1 @@
+No ocurrió nada en ese lapso de tiempo
